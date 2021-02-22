@@ -1,0 +1,194 @@
+*
+{
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root
+{
+    --mainFont: rgba(72, 110, 146, 1);
+    --lightFont: rgb(150, 179, 206);
+    --dark: rgba(109, 150, 166, .3)
+
+    
+}
+
+/* SCROLL BAR _________________________________________________________ */
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.progressionBar
+{
+    position: fixed;
+    top:0;
+    right:0;
+    width:5px;
+    background-color: var(--mainFont);
+    z-index: 99;
+}
+
+.scrollPath
+{
+    position: fixed;
+    top:0;
+    right:0;
+    width:5px;
+    height: 100vh;
+    background-color: var(--dark);
+    z-index: 99;
+}
+
+/* END SCROLL BAR _____________________________________________________ */
+
+/* START NAV___________________________________________________________ */
+
+nav
+{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    transition: .2s;
+}
+
+nav.addBackground
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .2s;
+}
+
+nav .myName
+{
+    text-transform: uppercase;
+    flex-shrink: 0;
+    color: var(--mainFont);
+    letter-spacing: 10px;
+    font-weight: light;
+    font-size: 2rem;
+    border-bottom: 1px solid var(--dark);
+}
+
+nav ul
+{
+    display: flex;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+nav ul li
+{
+    list-style: none;
+    margin: 2px;
+    flex-shrink: 0;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--mainFont);
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+nav ul li a:hover
+{
+    color: var(--lightFont);
+    border: 1px solid var(--lightFont);
+    border-radius: 5px;
+}
+
+@media (max-width:1050px)
+{
+    nav
+    {
+        padding: 10px 20px;
+    }
+
+    nav .myName
+    {
+        font-size: 1.8rem;
+    }
+
+    nav ul li a
+{
+    padding: 5px 10px;
+}
+}
+
+@media (max-width:800px)
+{
+    ul
+    {
+        flex-direction: column;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        top: -400px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: rgba(10, 22, 37, .9);
+    }
+
+    nav ul li 
+    {
+        margin-top: 25px;
+    }
+
+    nav ul li a
+    {
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1.8rem;
+    }
+}
+
+/* END NAV_______________________________________________________________ */
+
+/* START SECTIONS________________________________________________________ */
+
+.sec1
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("main-photo.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.sec2,.sec3,.sec4
+{
+    width: 100%;
+    background-color: black;
+    color: var(--mainFont);
+}
+
+section p
+{
+    width: 500px;
+    font-size: 1.5rem;
+    padding-top: 100px;
+    margin: auto;
+}
