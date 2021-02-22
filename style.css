@@ -89,6 +89,7 @@ nav ul
     font-size: 1.2rem;
     text-transform: uppercase;
     border-radius: 5px;
+    transition: all .2s ease-in-out;
 }
 
 nav ul li
@@ -115,6 +116,67 @@ nav ul li a:hover
     color: var(--lightFont);
     border: 1px solid var(--lightFont);
     border-radius: 5px;
+}
+
+.burgerMenu
+{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top: 25px;
+    right: 25px;
+    display: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.burgerMenu:hover
+{
+    transform: scale(1.1);
+}
+
+.burgerBar
+{
+    position: absolute;
+    width: 2rem;
+    height: 3px;
+    background: var(--mainFont);
+    transition: all 0.2s ease-in-out;
+}
+
+.burgerBar::after,
+.burgerBar::before
+{
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 3px;
+    background: var(--mainFont);
+    transition: all 0.2s ease-in-out;
+}
+
+.burgerBar::after
+{
+    transform: translateY(-.8rem);
+}
+
+.burgerBar::before
+{
+    transform: translateY(.8rem);
+}
+
+/* BURGER ANIMATION */
+.burgerMenu.openBurger .burgerBar::after
+{   
+    transform: scale(.1);
+}
+
+.burgerMenu.openBurger .burgerBar::before
+{   
+    transform: scale(.1);
 }
 
 @media (max-width:1050px)
@@ -162,6 +224,11 @@ nav ul li a:hover
         text-decoration: none;
         padding: 10px 20px;
         font-size: 1.8rem;
+    }
+
+    .burgerMenu
+    {
+        display: flex;
     }
 }
 
