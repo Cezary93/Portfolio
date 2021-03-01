@@ -1,8 +1,11 @@
 # Portfolio
 
-I am creating portfolio, it is currently in progress.
+I am creating portfolio, which is currently in progress.
 
-Technologies:
-HTML
-CSS
-Java script
+Technologies: 
+  - HTML
+  - CSS
+  - Java script
+
+
+Link to website: https://cezary93.github.io/Portfolio/
