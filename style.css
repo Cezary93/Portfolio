@@ -110,7 +110,7 @@ nav ul li a
     cursor: pointer;
     transition: .5s;
     color: var(--mainFont);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     border: 1px solid transparent;
     border-radius: 15px;
 }
@@ -246,7 +246,7 @@ nav ul li a:hover
 
 /* END NAV_______________________________________________________________ */
 
-/* START SECTIONS________________________________________________________ */
+/* START ALL SECTIONS________________________________________________________ */
 
 .sec1
 {
@@ -257,11 +257,11 @@ nav ul li a:hover
     background-position: center bottom;
 }
 
-.sec2,.sec3,.sec4
+.sec1,.sec2,.sec3,.sec4
 {
     background-color: black;
     color: var(--mainFont);
-    margin: 100px 100px 0 100px;
+    margin-bottom: 50px;
 }
 
 section p
@@ -269,6 +269,10 @@ section p
     font-size: 1.5rem;
     max-width: 400px;
 }
+
+/* END ALL SECTIONS________________________________________________________ */
+
+/* START SECTION 2________________________________________________________ */
 
 .sec2
 {
@@ -285,3 +289,149 @@ section p
     z-index: 10;
 }
 
+/* END SECTION 2________________________________________________________ */
+
+/* START SECTION 3________________________________________________________ */
+
+.sec3
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* END SECTION 3________________________________________________________ */
+
+/* START SECTION 4________________________________________________________ */
+
+.sec4
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4 h1
+{
+    text-transform: uppercase;
+    color: var(--mainFont);
+    letter-spacing: 2px;
+    font-weight: light;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.contactDiv
+{
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--dark);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formGroup
+{
+    width: 100%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.formGroup input,
+.formGroup textarea
+{
+    width: 100%;
+    background-color: var(--lightFont);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid var(--dark);
+}
+
+.formGroup.error input
+{
+    border: 1px solid rgb(217, 83, 79);
+    background-color: rgba(217, 83, 79, 0.2);
+    color: white;
+}
+
+.formGroup.success input
+{
+    border: 1px solid rgb(92, 184, 92);
+    background-color: rgba(92, 184, 92, .2);
+    color: white;
+}
+
+.formGroup.error textarea
+{
+    border: 1px solid rgb(217, 83, 79);
+    background-color: rgba(217, 83, 79, 0.2);
+    color: white;
+}
+
+.formGroup.success textarea
+{
+    border: 1px solid rgb(92, 184, 92);
+    background-color: rgba(92, 184, 92, .2);
+    color: white;
+}
+
+.formGroup small
+{
+    visibility: hidden;
+}
+
+.formGroup.error small
+{
+    visibility: visible;
+    color: rgb(217, 83, 79);
+    font-size: 0.8rem;
+}
+
+textarea
+{
+    resize: vertical;
+}
+
+button[type="submit"]
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+    margin-top: 5px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mainFont);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+button[type="submit"]:hover
+{
+    background-color: var(--dark);
+}
+
+button[type="submit"]:focus
+{
+    outline: none;
+}
+
+.formInfo
+{
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    margin: 15px;
+}
+
+/* END SECTION 4________________________________________________________ */

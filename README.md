@@ -1,6 +1,6 @@
 # Portfolio
 
-I am creating portfolio, which is currently in progress.
+Portfolio in progress. Website is not finished yet.
 
 Technologies: 
   - HTML
