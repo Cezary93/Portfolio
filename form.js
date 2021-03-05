@@ -7,10 +7,11 @@ const formInfo = document.querySelector(".formInfo");
 
 form.addEventListener("submit", (e) =>
 {
-    console.log(e);
     e.preventDefault();
 
     checkInputs();
+
+
 });
 
 function checkInputs()
@@ -28,7 +29,7 @@ function checkInputs()
     else
     {
         //add success class
-        setSuccessFor(firstName);
+        setSuccessFor(firstName); 
     }
 
     if(emailValue === "")
@@ -52,6 +53,8 @@ function checkInputs()
     {
         setSuccessFor(message);
     }
+
+
 }
 
 function setErrorFor(input, text)
@@ -75,3 +78,4 @@ function isEmail(email)
 {
     return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email);
 }
+

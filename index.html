@@ -15,6 +15,15 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- FORM FOR SEND -->
+    <script src="test.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_g7J3F1tJhSqMmGp3bx80C");
+        })();
+    </script>
 
 </head>
 <body>
@@ -35,7 +44,9 @@
         </div>
     </nav>
 
-    <section id="home" class="sec1"></section>
+    <section id="home" class="sec1">
+        
+    </section>
 
     <section id="about" class="sec2">
        <p>Jestem Cezary Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa ratione, qui unde, perferendis excepturi suscipit ducimus ipsam aperiam repellat voluptates delectus architecto placeat explicabo culpa quas quasi non voluptatum sint dolores consectetur facilis, sit reiciendis! Eos explicabo unde sed nobis quis enim quidem reprehenderit corporis distinctio, veritatis obcaecati a eligendi? Ducimus rerum sed sint consequatur accusantium sapiente, excepturi voluptatibus.</p>
@@ -50,7 +61,7 @@
     <section id="contact" class="sec4">
         <h1>Zapraszam do kontaktu</h1>
        <div class="contactDiv">
-           <form method="POST" autocomplete="off">
+           <form id="contactForm" method="post" autocomplete="off">
 
             <div class="formGroup">
                 <label for="firstName">Imię</label>
@@ -78,6 +89,6 @@
     
     <script src="scroll.js"></script>
     <script src="burgerMenu.js"></script>
-    <script src="form.js"></script>
+    <!-- <script src="form.js"></script> -->
 </body>
 </html>
