@@ -429,6 +429,19 @@ button[type="submit"]
     transition: all .3s ease-in-out;
 }
 
+button[type="submit"].submited 
+{
+    border: 1px solid rgb(92, 184, 92);
+    background-color: rgba(92, 184, 92, .2);
+    color: white;
+    cursor: default;
+}
+
+button[type="submit"].submited:hover
+{
+    background-color: rgba(92, 184, 92, .2);
+}
+
 button[type="submit"]:hover
 {
     background-color: var(--dark);
