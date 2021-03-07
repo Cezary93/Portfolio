@@ -11,7 +11,7 @@ window.addEventListener("scroll", ()=>
     let progressionHeigh = (window.pageYOffset / totalHeight ) * 100;
 
     //ADD BACKGROUND TO NAV ABOVE 200PX
-    if(Y > 200)
+    if(Y > 150)
     {
         nav.classList.add("addBackground");
     }

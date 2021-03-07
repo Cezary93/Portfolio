@@ -66,7 +66,7 @@ nav
     box-sizing: border-box;
     width: 100%;
     height: 100px;
-    padding: 10px 100px;
+    padding: 10px 50px;
     transition: .2s;
 }
 
@@ -81,9 +81,9 @@ nav .myName
     text-transform: uppercase;
     flex-shrink: 0;
     color: var(--mainFont);
-    letter-spacing: 10px;
+    letter-spacing: 2px;
     font-weight: light;
-    font-size: 2rem;
+    font-size: 1.2rem;
     border-bottom: 1px solid var(--dark);
 }
 
@@ -113,6 +113,7 @@ nav ul li a
     letter-spacing: 2px;
     border: 1px solid transparent;
     border-radius: 15px;
+    text-shadow: 0px 1px 9px black; 
 }
 
 nav ul li a:hover
@@ -183,23 +184,15 @@ nav ul li a:hover
     transform: scale(.1);
 }
 
-@media (max-width:1050px)
+/* @media (max-width:1050px)
 {
-    nav
-    {
-        padding: 10px 20px;
-    }
+    nav{}
 
-    nav .myName
-    {
-        font-size: 1.8rem;
-    }
+    nav .myName{}
 
-    nav ul li a
-{
-    padding: 5px 10px;
-}
-}
+    nav ul li a{}
+
+} */
 
 @media (max-width:800px)
 {
@@ -238,15 +231,15 @@ nav ul li a:hover
 
 @media (max-width: 470px)
 {
-    nav .myName
+    nav
     {
-        width: 220px;
+        padding: 5px 10px;
     }
 }
 
 /* END NAV_______________________________________________________________ */
 
-/* START ALL SECTIONS________________________________________________________ */
+/* START ALL SECTIONS + SECTION 1________________________________________________________ */
 
 .sec1
 {
@@ -257,17 +250,88 @@ nav ul li a:hover
     background-position: center bottom;
 }
 
+h1 /* H1 sec2,3,4 */
+{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--mainFont);
+    letter-spacing: 2px;
+    font-weight: light;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
 .sec1,.sec2,.sec3,.sec4
 {
     background-color: black;
     color: var(--mainFont);
-    margin-bottom: 50px;
+    padding:50px;
 }
 
 section p
 {
     font-size: 1.2rem;
     max-width: 400px;
+}
+
+.hello
+{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    animation: hello 3s;
+}
+
+@keyframes hello
+{
+    0%{opacity: 0; transform: scale(1.2);}
+    100%{opacity: 100%; transform: scale(1);}
+}
+
+.sec1 h1
+{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin-bottom: 0;
+    text-shadow: 0px 1px 9px black;    
+}
+
+.sec1 .more
+{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    animation: arrow 2s infinite;
+    cursor: pointer;
+}
+
+.sec1 .more a
+{
+    text-decoration: none;
+    color: var(--mainFont);
+    animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(15px); 
+        color: white;}
+    100%{transform: translateY(0);}
+}
+
+@media (max-width: 470px)
+{
+    .sec1 h1
+    {
+        font-size:1.2rem;
+        letter-spacing: 10px;
+    }
 }
 
 
@@ -279,6 +343,8 @@ section p
 {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .sec2 img
@@ -289,6 +355,12 @@ section p
     float: right;
     z-index: 10;
     margin-top: 10px;
+}
+
+.sec2 p
+{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 990px)
@@ -311,7 +383,38 @@ section p
 .sec3
 {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--dark)
+    
+}
+
+.sec3 .skillBox
+{
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    text-transform: uppercase;
+}
+
+.sec3 .skillBox p 
+{
+    letter-spacing: 2px;
+    padding-top: 10px;
+}
+
+.sec3 .skillBox img
+{
+    height: 100px;
+    width: auto;
+}
+
+@media (max-width: 500px)
+{
+    .sec3 .skillBox img
+    {
+        height: 70px;
+        width: auto;
+    }
 }
 
 /* END SECTION 3________________________________________________________ */
@@ -325,16 +428,6 @@ section p
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.sec4 h1
-{
-    text-transform: uppercase;
-    color: var(--mainFont);
-    letter-spacing: 2px;
-    font-weight: light;
-    font-size: 1.5rem;
-    margin-bottom: 50px;
 }
 
 .contactDiv
