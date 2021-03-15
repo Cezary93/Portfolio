@@ -184,16 +184,6 @@ nav ul li a:hover
     transform: scale(.1);
 }
 
-/* @media (max-width:1050px)
-{
-    nav{}
-
-    nav .myName{}
-
-    nav ul li a{}
-
-} */
-
 @media (max-width:800px)
 {
     ul
@@ -556,3 +546,61 @@ button[type="submit"]:focus
 }
 
 /* END SECTION 4________________________________________________________ */
+
+
+/* FOOTER START________________________________________________________ */
+
+.footerInfo
+{
+    width: 100%;
+    height: 80px;
+    background-color: var(--dark);
+    color: var(--mainFont);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    line-height: 80px;
+}
+
+.footerInfo h3
+{
+    display: inline;
+    margin: 0 20px 0 50px;
+    transition: .2s;
+}
+
+.footerInfo img
+{
+    width: 2rem;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.footerIcon
+{
+    transition: all .2s ease-in-out;
+    border-radius: px;
+    overflow: hidden;
+    
+}
+
+.footerIcon:hover
+{
+    transform: scale(1.2);
+}
+
+@media (max-width: 470px)
+{
+    .footerInfo h3
+    {
+        margin: 0 5px 0 10px;
+    }
+    
+    .footerInfo img
+    {
+        margin-right: 5px;
+    }
+}
+
+/* FOOTER END */
