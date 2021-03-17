@@ -1,6 +1,6 @@
 *
 {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
     font-weight: normal;
@@ -12,11 +12,9 @@
 
 :root
 {
-    --mainFont: rgba(72, 110, 146, 1);
+    --mainFont: rgb(84, 130, 173);
     --lightFont: rgb(150, 179, 206);
     --dark: rgba(109, 150, 166, .3)
-
-    
 }
 
 body{
@@ -72,7 +70,7 @@ nav
 
 nav.addBackground
 {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: .2s;
 }
 
@@ -376,13 +374,12 @@ section p
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: var(--dark)
-    
 }
 
 .sec3 .skillBox
 {
     text-align: center;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 50px;
     text-transform: uppercase;
 }
 
@@ -400,6 +397,15 @@ section p
 
 @media (max-width: 500px)
 {
+    .sec3
+    {
+        padding: 50px 10px;
+    }
+    .sec3 .skillBox
+    {
+        padding: 10px 20px;
+    }
+
     .sec3 .skillBox img
     {
         height: 70px;
